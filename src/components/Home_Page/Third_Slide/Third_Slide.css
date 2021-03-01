@@ -1,0 +1,120 @@
+.third_slide_block
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./slide_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.third_slide_inner_wrapper
+{    
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.third_slide_btn
+{
+    margin: auto;
+}
+
+.third_slide_btn button
+{
+    font-family: 'vogue-font';
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 6px 15px 4px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.third_slide_btn.ua button
+{
+    font-size: 2.75em;
+    padding: 9.5px 15px 5.5px;
+}
+
+.third_slide_btn.ru button
+{
+    font-size: 2.75em;
+    padding: 9.5px 12.5px 5.5px;
+}
+
+
+
+@media (orientation:portrait) 
+{
+    .third_slide_btn button
+    {
+        font-size: 2.85vh;
+    }
+    .third_slide_btn.ua button
+    {
+        font-size: 2.75vh;
+        padding: 7px 12px 5px;
+    }
+    .third_slide_btn.ru button
+    {
+        font-size: 2.75vh;
+        padding: 7px 11px 5px;
+    }
+}
+
+@media (orientation:landscape) and (max-width : 1200px)
+{
+    .third_slide_btn button
+    {
+        font-size: 2.85vh;
+    }
+    .third_slide_btn.ua button
+    {
+        font-size: 2.75vh;
+        padding: 7px 12px 5px;
+    }
+    .third_slide_btn.ru button
+    {
+        font-size: 2.75vh;
+        padding: 7px 10.5px 5px;
+    }
+}
+
+@media (orientation: landscape) and (min-width : 1200px)
+{
+    .third_slide_btn button
+    {
+        font-size: 2.2vw;
+    }
+    .third_slide_btn.ua button
+    {
+        font-size: 2vw;
+        padding: 9.5px 15px 5.5px;
+    }
+    .third_slide_btn.ru button
+    {
+        font-size: 2vw;
+        padding: 9.5px 13px 5.5px;
+    }
+}
+
+@media (orientation:landscape) and (min-width : 1200px) and (max-width: 1750px)
+{
+    .third_slide_btn button
+    {
+        font-size: 2.1vw;
+    }
+    .third_slide_btn.ua button
+    {
+        font-size: 1.9vw;
+        padding: 8px 16px 6px;
+    }
+    .third_slide_btn.ru button
+    {
+        font-size: 1.9vw;
+        padding: 8px 14.5px 6px;
+    }
+}

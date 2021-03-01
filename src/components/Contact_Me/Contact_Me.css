@@ -1,0 +1,241 @@
+.contact_wrapper
+{
+    position: relative;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'vogue-font';
+    overflow: hidden;
+}
+
+.contact_main
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('background/Contact\ me.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10.5vw;
+}
+
+.contact_main h2
+{
+    color: white;
+    font-size: 10.15vw;
+    position: absolute;
+    top: 50%;
+    right: 14.15vw;
+    transform: translateY(-50%);
+}
+
+.contact_contacts
+{   
+    width: 100%;
+    display: flex;
+    margin-bottom: 10.5vw;
+}
+
+.contact_contacts_inner_wrapper
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 5px;
+}
+
+.contact_contacts_inner_wrapper h2
+{
+    font-size: 2.632vw;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 6.5vw;
+}
+
+.contact_contacts_text
+{
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.contact_mediakit
+{
+    width: 100%;
+}
+
+.contact_mediakit_inner_wrapper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contact_mediakit_inner_wrapper h2
+{
+    position: absolute;
+    font-size: 14.2vw;
+    top: 20%;
+    right: -1vw;
+}
+
+.contact_mediakit_inner_wrapper img
+{
+    display: block;
+    position: relative;
+    height: 100vh;
+}
+.contact_mediakit_download
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.contact_mediakit_download button
+{
+    position: relative;
+    top: 75%;
+    margin: 0 auto;
+    font-size: 2vw;
+    background-color: transparent;
+    padding: 0px 1.4vw;
+    border: 2px solid black;
+}
+.contact_mediakit_download button a
+{
+    color: black; 
+}
+
+.contact_footer
+{
+    background-image: url('background/Slide\ 4.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.contact_mediakit_img_wrapper
+{
+    display: flex;
+}
+
+
+@media (max-aspect-ratio : 1250/850)
+{
+    .contact_main
+    {
+        background-image: url('background/ContactMe_longDima.jpg');
+    }
+
+}
+
+@media (max-aspect-ratio : 1150/850)
+{
+
+    .contact_footer
+    {
+        background-image: url('background/Slide\ 4_new2.jpg');
+    }
+}
+
+@media (max-aspect-ratio : 1100/850)
+{
+    .contact_mediakit_inner_wrapper h2
+    {
+        top: auto;
+        bottom: 47vmax;
+    }
+    .contact_mediakit_download button 
+    {
+        position: absolute;
+        font-size: 1.99vmax;
+        padding: 0px 1.4vw;
+        right: 2.8em;
+        top: auto;
+        bottom : 21vh;
+    }
+}
+
+@media (max-width : 1000px)
+{
+    .contact_contacts_inner_wrapper h2 
+    {
+        font-size: 1.9em;
+    }
+}
+@media (max-aspect-ratio : 890/850)
+{
+    .contact_mediakit_download button a
+    {
+        color: white;
+    }
+    .contact_mediakit_download button 
+    {
+        border: 2px solid white;
+    }
+}
+
+@media (orientation:portrait) and (max-aspect-ratio : 830/850)
+{
+    .contact_mediakit_inner_wrapper h2
+    {
+        color: white;
+    }
+}
+
+@media (max-aspect-ratio : 680/850) and (orientation:portrait)
+{
+    .contact_mediakit_img_wrapper::after
+    {
+        display: block;
+        content: "";
+        background-image: url('background/Slide\ 3_short.jpg');
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contact_mediakit_inner_wrapper h2
+    {
+        font-size: 10.2vh;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        z-index: 5;
+    }
+    .contact_mediakit_download button
+    {
+        right: 50%;
+        transform: translateX(50%);
+        border: 2px solid white;
+    }
+    .contact_mediakit_download button a
+    {
+        color: white;
+    }
+}
+
+@media (max-aspect-ratio : 375/850) and (orientation:portrait)
+{
+    .contact_main_text
+    {
+        position: relative;
+        margin: auto;
+    }
+    .contact_main_text h2
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: translateY(-0%);
+    }
+    .contact_mediakit_inner_wrapper h2
+    {
+        font-size: 23.2vw;
+    }
+}

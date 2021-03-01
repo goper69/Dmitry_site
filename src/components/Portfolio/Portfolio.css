@@ -1,0 +1,490 @@
+.portfolio_container
+{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.portfolio_container h2
+{
+    font-family: 'second-font';
+}
+
+.portfolio_view_btn 
+{
+    position: absolute;
+    font-family: 'vogue-font';
+    font-size: 3.3vmin;
+    padding: 0px 0.6vmin;
+    line-height: 3.3vmin;
+    background-color: transparent;
+    color: black;
+}
+
+.portfolio_container > div:not(.header)
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.portfolio_main
+{
+    background-image: url('bg_and_images/portfolio.jpg');
+    background-position: top;
+    background-size: cover;
+}
+.portfolio_main h2
+{
+    font-size: 6.6vmax;
+    text-transform: uppercase;
+    position: absolute;
+    right: 4vmax;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio_main .ua 
+{
+    font-size: 6.1vmax !important;
+}
+.portfolio_main .ru 
+{
+    font-size: 5.7vmax !important;
+}
+.portfolio_sheremeta
+{
+    background-image: url('bg_and_images/sharemeta_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio_sheremeta h2
+{
+    font-size: 6.6vmax;
+    position: absolute;
+    right: 27vmax;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio_sheremeta .portfolio_view_btn
+{
+    right: 40.2vmax;
+    top: 63.5%;
+    transform: translate(50%,-50%);
+    border: 0.15vw solid black;
+}
+
+.portfolio_BW
+{
+    background-image: url('bg_and_images/BW_collections.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+.portfolio_BW_inner_block
+{
+    position: absolute;
+    right: 4vmax;
+    top: 50%;
+    transform: translateY(-10%);
+    display: flex;
+    flex-direction: column;
+}
+.portfolio_BW h2
+{
+    font-size: 6.6vmax;
+    color: white;
+    margin-bottom: 3vmax;
+}
+
+.portfolio_BW .portfolio_view_btn
+{
+    margin: 0px auto;
+    position: relative !important;
+    color: white;
+    border: 0.15vw solid white;
+}
+
+.portfolio_haircuts
+{
+    background-image: url('bg_and_images/heircuts_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio_haircuts .portfolio_view_btn
+{
+    left: 50%;
+    top: 50%;
+    transform: translate(40vmin,-50%) !important;
+    border: 0.15vw solid black;
+}
+.portfolio_haircuts .portfolio_view_btn.ru
+{
+    transform: translate(34.5vmin,-50%) !important;
+}
+
+.portfolio_haircuts .portfolio_view_btn.ua
+{
+    transform: translate(33.5vmin,-50%) !important;
+}
+
+
+.portfolio_razodeto
+{
+    background-image: url('bg_and_images/razodeto_main.jpg');
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio_razodeto_inner_block
+{
+    position: absolute;
+    top : 39%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_razodeto img
+{
+    width: 40vw;
+    margin-bottom: 1vh;
+}
+.portfolio_razodeto .portfolio_view_btn
+{
+    position: relative !important;
+    margin: 0 auto;
+    color: white;
+    border: 0.15vw solid white;
+}
+
+.portfolio_girls
+{
+    background-image: url('bg_and_images/girls_bg.jpg');
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_girls h2
+{
+    font-size: 22vmin;
+    text-transform: uppercase;
+    margin: auto;
+    color: white;
+}
+
+.portfolio_girls .portfolio_view_btn
+{
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border: 0.15vw solid white;
+}
+
+.portfolio_boys
+{
+    background-image: url('bg_and_images/mans_main2.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio_boys_inner_block
+{
+    position: absolute;
+    top: 38%;
+    right: 12.4vmax;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_boys_inner_block h2
+{
+    font-size: 11vmax;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+}
+
+.portfolio_boys_inner_block .portfolio_view_btn
+{
+    position: relative !important;
+    margin: 0 auto;
+    border: 0.15vw solid black;
+}
+
+.portfolio_folklore
+{
+    background-image: url('bg_and_images/folklore_bg.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio_folklore h2
+{
+    font-size: 6.3vmax;
+    position: absolute;
+    right: 25.2vmax;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio_folklore .portfolio_view_btn
+{
+    top: 61vh;
+    right: 25vmax;
+    transform: translateX(50%);
+    color: white;
+    border: 0.15vw solid white;
+}
+
+.portfolio_product
+{
+    background-image: url('bg_and_images/product_bg.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio_product_inner_wrapper
+{
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-5vmax);
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_product h2
+{
+    font-size: 10vmax;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 4.5vmax;
+}
+.portfolio_product .portfolio_view_btn
+{
+    position: relative !important;
+    margin: 0px auto;
+    color: white;
+    border: 0.15vw solid white;
+}
+
+.portfolio_view_btn.hidden 
+{
+    visibility: hidden;
+}
+
+@media (max-aspect-ratio : 1200/850)
+{
+    .portfolio_sheremeta
+    {
+        background-image: url('bg_and_images/sharemeta1.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .portfolio_sheremeta h2
+    {
+        color: white;
+        font-size: 14vmin;
+        top: 50vh;
+        right: 50vw;
+        transform: translate(50%, -50%);
+    }
+    .portfolio_sheremeta .portfolio_view_btn
+    {
+        color: white !important;
+        border: 0.15vw solid white !important;
+        top: 65vmin !important;
+        right: 50vw !important;
+        transform: translate(50%, -50%) !important;
+    }
+    .portfolio_haircuts
+    {
+        background-image: url('bg_and_images/heircuts_center.jpg');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .portfolio_haircuts .portfolio_view_btn , .portfolio_haircuts .portfolio_view_btn.ua , .portfolio_haircuts .portfolio_view_btn.ru
+    {
+        left: 50%;
+        bottom: 25vw;
+        top: auto;
+        color: white !important;
+        border: 0.15vw solid white !important;
+        transform: translate(-50%, -50%) !important;
+        border: 0.15vw solid black;
+    }
+}
+@media (max-aspect-ratio : 900/850)
+{
+    .portfolio_main
+    {
+        background-image: url('./bg_and_images/portfolio2.jpg');
+    }
+    .portfolio_main h2
+    {
+        top: 45%;
+        color: white;
+        right: 50vw;
+        transform: translateX(50%);
+    }
+    .portfolio_girls
+    {
+        background-image: url('bg_and_images/girls_left.jpg');
+    }
+    .portfolio_boys
+    {
+        background-image: url('bg_and_images/mans_main.jpg');
+    }
+    .portfolio_sheremeta .portfolio_view_btn
+    {
+        top: 62vmax !important;
+    }
+    .portfolio_boys_inner_block 
+    {
+        top: 50%;
+        right: 50%;
+        transform: translate(50% , -50%);
+    }
+    .portfolio_boys_inner_block h2
+    {
+        font-size: 30vw;
+        color: white;
+    }
+    .portfolio_boys_inner_block .portfolio_view_btn 
+    {
+        color: white !important;
+        border: 0.15vw solid white !important;
+    }
+
+    .portfolio_folklore
+    {
+        background-image: url('bg_and_images/folklore_right.jpg');
+    }
+    .portfolio_folklore h2 
+    {
+        top: auto;
+        bottom: 28vh;
+        font-size: 12.8vw;
+        white-space: nowrap;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .portfolio_folklore .portfolio_view_btn
+    {
+        top: 77.5vh;
+        right: 50%;
+        transform: translateX(50%);
+        color: black;
+        border: 0.15vw solid black;
+    }
+}
+@media (max-aspect-ratio : 720/850)
+{
+    .portfolio_view_btn 
+    {
+        font-size: 2.7vmax;
+        padding: 0px 0.55vmax;
+        line-height: 2.7vmax;
+    }
+    .portfolio_BW 
+    {
+        background-image: url('bg_and_images/BW_collections_bg.jpg');
+        background-position: bottom;
+    }
+    .portfolio_BW_inner_block
+    {
+        top: 52%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .portfolio_BW h2
+    { 
+        font-size: 9vmax;
+        white-space: nowrap;
+        margin-bottom: 7vmax;
+    }
+    .portfolio_razodeto
+    {
+        background-image: url('bg_and_images/razodeto_main2.jpg');
+    }
+
+    .portfolio_razodeto_inner_block
+    {
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+    }
+    .portfolio_razodeto img 
+    {
+        width: 90vw;
+    }
+
+}
+
+@media (max-aspect-ratio : 600/850)
+{
+    .portfolio_sheremeta
+    {
+        background-image: url('bg_and_images/sharemeta3.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .portfolio_sheremeta h2 
+    {
+        font-size: 10.5vmax;
+        color: white;
+        top: 36.6vmax;
+        right: 50vw;
+        transform: translate(50%, -50%);
+    }
+    .portfolio_sheremeta .portfolio_view_btn
+    {
+        color: white !important;
+        border: 0.15vw solid white !important;
+        top: 50vmax !important;
+        right: 50vw !important;
+        transform: translate(50%, -50%) !important;
+    }
+    .portfolio_haircuts .portfolio_view_btn , .portfolio_haircuts .portfolio_view_btn.ua , .portfolio_haircuts .portfolio_view_btn.ru
+    {
+        bottom: 17.7vh;
+    }
+    .portfolio_girls h2
+    {
+        font-size: 28vw;
+    }
+}
+@media (max-aspect-ratio : 450/850)
+{
+    .portfolio_BW h2
+    { 
+        font-size: 17vmin;
+    }
+    .portfolio_product h2
+    {
+        font-size: 19vw;
+    }
+}
+@media (max-aspect-ratio : 365/850)
+{
+    .portfolio_main h2
+    {
+        font-size: 16.5vw;
+    }
+    .portfolio_sheremeta h2 
+    {
+        font-size: 23vw;
+    }
+}

@@ -1,0 +1,255 @@
+.popUp_block
+{
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0px; left: 0px;
+    right: 0px; bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    z-index: 21;
+    display: flex;
+}
+
+.popUp_block.hidden
+{
+    display: none !important;
+}
+
+
+.popUp_slider_block
+{
+    margin: auto;
+    position: relative;
+    width: 80vw;
+}
+
+.popUp_slider_inner_wrapper
+{
+    overflow-x: hidden;
+}
+
+.popUp_slider_gallery
+{
+    height: 85vh;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.img_wrapper
+{
+    min-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    padding: 0px 0.5vw;
+    position: relative;
+}
+.hidden_img 
+{
+  visibility: hidden !important;
+}
+
+.lds-default {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 4.167vmax;
+    height: 4.167vmax;
+    z-index: 1;
+    user-select: none;
+  }
+  .lds-default div {
+    position: absolute;
+    width: 0.313vmax;
+    height: 0.313vmax;
+    background: #fff;
+    border-radius: 100%;
+    animation: lds-default 1.2s linear infinite;
+  }
+  .lds-default div:nth-child(1) {
+    animation-delay: 0s;
+    top: 1.927vmax;
+    left: 3.438vmax;
+  }
+  .lds-default div:nth-child(2) {
+    animation-delay: -0.1s;
+    top: 1.146vmax;
+    left: 3.229vmax;
+  }
+  .lds-default div:nth-child(3) {
+    animation-delay: -0.2s;
+    top: 0.573vmax;
+    left: 2.708vmax;
+  }
+  .lds-default div:nth-child(4) {
+    animation-delay: -0.3s;
+    top: 0.365vmax;
+    left: 1.927vmax;
+  }
+  .lds-default div:nth-child(5) {
+    animation-delay: -0.4s;
+    top: 0.573vmax;
+    left: 1.146vmax;
+  }
+  .lds-default div:nth-child(6) {
+    animation-delay: -0.5s;
+    top: 1.146vmax;
+    left: 0.573vmax;
+  }
+  .lds-default div:nth-child(7) {
+    animation-delay: -0.6s;
+    top: 1.927vmax;
+    left: 0.365vmax;
+  }
+  .lds-default div:nth-child(8) {
+    animation-delay: -0.7s;
+    top: 2.708vmax;
+    left: 0.573vmax;
+  }
+  .lds-default div:nth-child(9) {
+    animation-delay: -0.8s;
+    top: 3.229vmax;
+    left: 1.146vmax;
+  }
+  .lds-default div:nth-child(10) {
+    animation-delay: -0.9s;
+    top: 3.438vmax;
+    left: 1.927vmax;
+  }
+  .lds-default div:nth-child(11) {
+    animation-delay: -1s;
+    top: 3.229vmax;
+    left: 2.708vmax;
+  }
+  .lds-default div:nth-child(12) {
+    animation-delay: -1.1s;
+    top: 2.708vmax;
+    left: 3.229vmax;
+  }
+  @keyframes lds-default {
+    0%, 20%, 80%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  
+.img_wrapper img
+{
+    margin: auto !important;
+    max-height: 100%;
+    max-width: 100%;
+    user-select: none;
+    transform: scale(0.993);
+    z-index: 2;
+}
+
+.popUp_arrows
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 200;
+}
+.popUp_left_arrow
+{
+    left: -3vmin;
+}
+.popUp_right_arrow
+{
+    right: -3vmin;
+}
+.popUp_closeBtn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.popUp_info_block
+{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 33;
+}
+
+.popUp_logo
+{
+    text-transform: uppercase;
+    font-family: 'second-font';
+    font-size: 2.2vmax;
+    letter-spacing: 6px;
+    user-select: none; 
+    margin-bottom: 0.6vmax;
+}
+
+.popUp_about
+{
+    font-family: 'vogue-font';
+    font-size: 1.2vmax;
+    margin-bottom: 0.9vmax;
+}
+
+.popUp_counter
+{
+    font-family: 'vogue-font';
+    font-size: 1vmax;
+    color: #bf945b;
+}
+
+.popUp_closeBtn:hover .popUp_close_icon
+{
+    fill: rgb(202, 165, 0);
+}
+
+.popUp_arrows:hover .popUp_arrows_fill
+{
+    fill: rgb(167, 167, 167);
+}
+
+@media (max-aspect-ratio : 1400/850)
+{
+    .popUp_logo
+    {
+        font-size: 3.61vmin;
+        margin-bottom: 0.9vmin;
+    }
+    .popUp_about
+    {
+        font-size: 1.97vmin;
+        margin-bottom: 1.5vmin;
+    }
+    .popUp_counter
+    {
+        font-size: 1.7vmin;
+    }
+}
+@media (max-aspect-ratio : 850/850)
+{
+    .popUp_logo
+    {
+        font-size: 3.61vmax;
+        margin-bottom: 0.9vmax;
+    }
+    .popUp_about
+    {
+        font-size: 1.97vmax;
+        margin-bottom: 1.5vmax;
+    }
+    .popUp_counter
+    {
+        font-size: 1.7vmax;
+    }
+}

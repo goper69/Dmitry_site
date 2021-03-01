@@ -1,0 +1,81 @@
+.second_slide_block
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./slide2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.second_slide_inner_wrapper
+{    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.second_slide_text
+{
+    font-family: 'vogue-font';
+    margin: auto 0px;
+}
+
+.second_slide_text h2
+{
+    transform: translateX(-2.1vw);
+    font-family: 'vogue-font';
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 17.8vw;
+    color: rgb(255, 255, 255);
+}
+
+.second_slide_text.ru h2
+{
+    font-size: 15.3vw;
+    transform: translateX(-1.7vw);
+}
+
+.second_slide_text.ua h2
+{
+    font-size: 16.5vw;
+    transform: translateX(-1.9vw);
+}
+
+.second_slide_btn
+{
+    position: absolute;
+    font-family: 'vogue-font';
+    font-size: 2.6vmax;
+    padding: 0px 0.521vmax;
+    line-height: 2.6vmax;
+    background-color: transparent;
+    border: 0.11vw solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18.6vh;
+}
+
+.second_slide_btn.ua span, .second_slide_btn.ru span
+{
+    position: relative;
+    top: -0.175vw;
+}
+
+.second_slide_btn.ua 
+{
+    font-size: 2.34vmax;
+    padding: 0px 0.4689vmax;
+    /* line-height: 2.34vmax; */
+}
+
+@media (max-aspect-ratio : 131/185) 
+{
+    .second_slide_block
+    {
+        background-image: url("./Девка.jpg");
+    }
+}

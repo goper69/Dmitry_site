@@ -1,0 +1,96 @@
+.languages_nav
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    top: 0.781vw;
+    right: 0.781vw;
+    background-color: transparent;
+}
+
+.hidden_buttons
+{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+.active
+{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#mainBtn.active 
+{
+    opacity: 1;
+    transition: 0.4s;
+}
+.languages_nav button
+{
+    top: 0px;
+    left: 0px;
+    padding: 0.35vw;
+    color: white;
+    font-size: 1.15vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+#mainBtn
+{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    opacity: 0.43;
+}
+
+.blackBtn button
+{
+    color: black;
+}
+.blackBtn #mainBtn
+{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.fixed
+{
+    position: absolute;
+}
+
+@media (max-width : 1250px)
+{    
+    .languages_nav button
+    {
+        font-size: 1.15em;
+    }
+    .languages_nav
+    {
+        top: 1.3vw;
+        right: 1.3vw;
+    }
+    .blackBtn .hidden_buttons button:last-child
+    {
+        color: white;
+    }
+}
+
+@media (max-width : 560px)
+{
+    .languages_nav button
+    {
+        font-size: 2.5vw;
+    }
+    .languages_nav
+    {
+        top: 1.7vw;
+        right: 1.7vw;
+    }
+}
+
+
