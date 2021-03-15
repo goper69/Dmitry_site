@@ -15,8 +15,7 @@ export default class Portfolio extends Component
     language : "ua",
     header_logo_color : "white",
     header_color : "white",
-    popUp : false,
-    popUp_load : 0
+    popUp : false
   };
 
   lang_label =
@@ -42,6 +41,7 @@ export default class Portfolio extends Component
   }
 
   scroll2 = React.createRef(); // создаем ссылку на наш скролл компонент
+  popUp_ref = React.createRef(); // создаем ссылку на наш pop-up
 
   onNavClick = (who_active) => { this.scroll2.current.onNavClick(who_active); }
   slider_scroll = (y) => 
@@ -49,10 +49,15 @@ export default class Portfolio extends Component
     this.scroll2.current.slider_scroll(y); 
   }
   
-  onButtonClick = () =>
+  onButtonClick = () => // будет служить как функция для закрывания pop-up окна
   {
     this.setState(({popUp}) => {return {popUp : !popUp}});
-    this.setState(({popUp_load}) => {return {popUp_load : this.state.which_checked}});
+  }
+
+  onButtonClick2 = () => // будет служить для открывания pop-up окна и старта загрузки изображений в pop-up
+  {
+    this.setState(({popUp}) => {return {popUp : !popUp}});
+    this.popUp_ref.current.loadImages();
   }
 
   render() 
@@ -72,7 +77,7 @@ export default class Portfolio extends Component
         <SlideScroll ref = {this.scroll2} _this = {this}/>
         <Languages onNavClick = {this.onNavClick}/>
         <Header header_logo_color = {this.state.header_logo_color} header_color = {this.state.header_color}/>
-        <PopUp_Gallery isOpen = {this.state.popUp} onButtonClick = {this.onButtonClick} which_checked = {this.state.popUp_load}/>
+        <PopUp_Gallery isOpen = {this.state.popUp} onButtonClick = {this.onButtonClick} which_checked = {this.state.which_checked} ref = {this.popUp_ref}/>
         <div className="portfolio_main">
           <h2 className = {language}>{langLab.portfolio}</h2>
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height} />
@@ -80,55 +85,55 @@ export default class Portfolio extends Component
 
         <div className="portfolio_sheremeta">
           <h2>Sheremeta</h2>
-          <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick} >{langLab.view}</button>
+          <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2} >{langLab.view}</button>
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*2} />
         </div>
 
         <div className="portfolio_BW">
           <div className="portfolio_BW_inner_block">
             <h2>BW collection</h2>
-            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick}>{langLab.view}</button>
+            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2}>{langLab.view}</button>
           </div>
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*3} />
         </div>
 
         <div className="portfolio_haircuts">
-          <button className = {openClass + " portfolio_view_btn " + language} onClick = {this.onButtonClick}>{langLab.view}</button>
+          <button className = {openClass + " portfolio_view_btn " + language} onClick = {this.onButtonClick2}>{langLab.view}</button>
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*4} />
         </div>
 
         <div className="portfolio_razodeto">
           <div className="portfolio_razodeto_inner_block">
             <img src= {razodeto_logo} alt=""/>
-            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick}>{langLab.view}</button> 
+            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2}>{langLab.view}</button> 
           </div>
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*5} />
         </div>
 
         <div className="portfolio_girls">
           <h2>girls</h2>
-          <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick}>{langLab.view}</button> 
+          <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2}>{langLab.view}</button> 
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*6} />
         </div>
 
         <div className="portfolio_boys">
           <div className="portfolio_boys_inner_block">
             <h2>boys</h2>
-            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick}>{langLab.view}</button> 
+            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2}>{langLab.view}</button> 
           </div>
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*7} />
         </div>
 
         <div className="portfolio_folklore">
           <h2>{"Folklore & Fashion"}</h2>
-          <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick}>{langLab.view}</button> 
+          <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2}>{langLab.view}</button> 
           <Arrow_down slider_scroll = {this.slider_scroll} y = {height*8} isBlack = "black"/>
         </div>
 
         <div className="portfolio_product">
           <div className="portfolio_product_inner_wrapper">
             <h2>product</h2>
-            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick}>{langLab.view}</button>
+            <button className = {"portfolio_view_btn " + openClass} onClick = {this.onButtonClick2}>{langLab.view}</button>
           </div>
         </div>
 
