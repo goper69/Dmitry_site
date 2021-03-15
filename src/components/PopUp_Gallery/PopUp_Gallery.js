@@ -1,5 +1,5 @@
 import React, { useState , useEffect} from 'react';
-import './PopUp_Gallery.css';
+import './PopUp_Gallery.scss';
 
 const PopUp_Gallery = ({isOpen , onButtonClick, which_checked}) => // CLASS ???????????????????
 {
