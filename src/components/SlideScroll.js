@@ -150,11 +150,6 @@ export default class SlideScroll extends Component
   componentDidMount()
   {
     this._this = this.props._this;
-    if(!window.localStorage.language)
-    {
-      window.localStorage.language = "ua";
-      this.onNavClick("ua");
-    }
     if(localStorage.getItem("pathname") !== window.location.pathname)
     {
       setTimeout(() =>
