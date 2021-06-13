@@ -39,7 +39,7 @@ export default class PopUp_Gallery extends Component
             innerImages.push
             (
                 <div className="img_wrapper" key = {i + "_div"}>
-                    <img className = "hidden_img" src={imgMass[i]} alt="Нет изображения" key = {i + "_img"}  onLoad = {(e)=> {e.target.className = "";}}/> 
+                    <img className = "hidden_img" src={imgMass[i]} alt="Нет изображения" key = {i + "_img"}  onLoad = {(e)=> {e.target.className = "visible_img";}}/> 
                     <div className="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                 </div>
             );
